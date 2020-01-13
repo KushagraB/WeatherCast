@@ -6,6 +6,40 @@
     android:background="@color/colorPrimary"
     tools:context=".FragmentPictures">
 
+    <FrameLayout
+        android:id="@+id/progressSymbol"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBarHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:layout_marginLeft="180dp"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:minHeight="50dp"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleLarge"
+            android:indeterminateTint="@color/colorAccent"
+            />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:text="Fetching Photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

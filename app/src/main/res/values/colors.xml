@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#000</color>
     <color name="colorAccent">#9575CD</color>
     <color name="colorCard">#262626</color>
+    <color name="white">#fff</color>
+    <color name="searchBarColor">#222</color>
+    <color name="yellow">#DF9108</color>
+    <color name="magenta">#B075F4</color>
 </resources>

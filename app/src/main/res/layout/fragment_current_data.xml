@@ -12,6 +12,7 @@
         android:id="@+id/detailViewCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:layout_marginLeft="13dp"
         android:layout_marginRight="13dp"
@@ -73,8 +74,7 @@
             </TableRow>
 
             <TableRow
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:gravity="center"
                 android:layout_height="wrap_content">
@@ -83,7 +83,7 @@
                     android:id="@+id/currentLocation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="Los Angeles, CA, USA"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"
                     android:textSize="18dp" />
@@ -149,13 +149,14 @@
                         android:layout_width="match_parent">
 
                         <TextView
+                            android:id="@+id/humidity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="17dp"
                             android:layout_marginTop="5dp"
+                            android:text="78%"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:text="78%"/>
+                            android:textSize="17dp" />
 
                     </TableRow>
 
@@ -199,13 +200,14 @@
                         android:layout_width="match_parent">
 
                         <TextView
+                            android:id="@+id/windspeed"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="17dp"
                             android:layout_marginTop="5dp"
+                            android:text="17.83 mph"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:text="17.83 mph"/>
+                            android:textSize="17dp" />
 
                     </TableRow>
 
@@ -249,13 +251,14 @@
                         android:layout_width="match_parent">
 
                         <TextView
+                            android:id="@+id/visibility"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="17dp"
                             android:layout_marginTop="5dp"
+                            android:text="10.00 km"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:text="10.00 km"/>
+                            android:textSize="17dp" />
 
                     </TableRow>
 
@@ -299,13 +302,14 @@
                         android:layout_width="match_parent">
 
                         <TextView
+                            android:id="@+id/pressure"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="17dp"
                             android:layout_marginTop="5dp"
+                            android:text="1016.88 mb"
                             android:textAlignment="center"
                             android:textColor="@android:color/white"
-                            android:text="1016.88 mb"/>
+                            android:textSize="17dp" />
 
                     </TableRow>
 
@@ -764,7 +768,18 @@
 
         </ScrollView>
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/map_marker_minus"
+            android:layout_margin="16dp" />
+<!--        <android.support.design.widget.FloatingActionButton-->
+<!--            />-->
 
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
+
+<!--    android:contentDescription="@string/submit"-->
